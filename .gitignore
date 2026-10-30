@@ -13,5 +13,8 @@ dist/
 # fuori dal repo pubblico.
 PIANO_PROGETTO.md
 
+# Bozze legali con note interne: entrano nel sito solo nella versione definitiva.
+docs/legale/
+
 # macOS
 .DS_Store
