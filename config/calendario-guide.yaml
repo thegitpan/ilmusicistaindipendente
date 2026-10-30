@@ -1,0 +1,649 @@
+# Calendario delle guide di Il Musicista Indipendente: i 50 temi che il motore "Guide" scrive in automatico, 1-2 a settimana, nell'ordine del file.
+# Priorità 1 = primi due mesi, poi 2 e 3. Con rischio "alto" (fisco, contributi, contratti, diritti) l'AI scrive solo dalle fonti ufficiali elencate.
+# Se una fonte non risponde o non conferma un dato, quel dato non si pubblica. Fonti controllate il 30/10/2026.
+# BOZZA: va approvata da Fabrizio prima che le automazioni la usino.
+guide:
+  # ───────────── Priorità 1: primi due mesi ─────────────
+  - id: 1
+    slug: "come-iscriversi-alla-siae"
+    titolo: "Come iscriversi alla SIAE e quando conviene farlo"
+    categoria: "diritti-e-siae"
+    sommario: "Chi può iscriversi alla sezione Musica, cosa serve per farlo con l'app SIAE+, quanto costa, che differenza c'è tra associazione e mandato e cosa cambia sotto i 30 anni. Quando ha senso iscriversi subito e quando si può aspettare."
+    rischio: "alto"
+    fonti:
+      - "https://www.siae.it/it/autori-ed-editori/iscriversi-a-siae/come-iscriversi-musica/"
+      - "https://www.siae.it/it/autori-ed-editori/iscriversi-a-siae/"
+      - "https://www.siae.it/it/autori-ed-editori/diritto-autore/"
+    strumento_collegato: null
+    priorita: 1
+
+  - id: 2
+    slug: "come-scegliere-il-distributore-digitale"
+    titolo: "Come scegliere il distributore digitale per la tua musica"
+    categoria: "distribuzione-e-streaming"
+    sommario: "Cosa fa un distributore digitale e come confrontare costi, percentuali trattenute, tempi di pagamento e servizi inclusi. Perché conviene partire dagli elenchi di distributori consigliati da Spotify, Apple Music e YouTube."
+    rischio: "basso"
+    fonti:
+      - "https://artists.spotify.com/providers"
+      - "https://artists.apple.com/partners/"
+      - "https://artists.apple.com/support/1108-get-your-next-release-on-apple-music"
+      - "https://support.google.com/youtubemusic/answer/9105565"
+    strumento_collegato: null
+    priorita: 1
+
+  - id: 3
+    slug: "quanto-paga-spotify-per-ascolto"
+    titolo: "Quanto paga Spotify per ascolto: come si calcolano davvero i guadagni"
+    categoria: "distribuzione-e-streaming"
+    sommario: "Perché non esiste una tariffa fissa per stream, come si dividono i ricavi tra registrazione e diritto d'autore e quale soglia minima di ascolti serve per essere pagati. Cosa arriva davvero all'artista tramite distributore e SIAE."
+    rischio: "basso"
+    fonti:
+      - "https://loudandclear.byspotify.com/"
+      - "https://artists.spotify.com/en/royalties-guide"
+      - "https://www.siae.it/it/notizie/royalties-musicali-digitali/"
+    strumento_collegato: "calcolatore-streaming"
+    priorita: 1
+
+  - id: 4
+    slug: "loudness-e-lufs-per-lo-streaming"
+    titolo: "Loudness e LUFS: quanto deve suonare forte un master per lo streaming"
+    categoria: "produzione-e-audio"
+    sommario: "Cosa misurano loudness integrata, true peak e range dinamico, come Spotify e le altre piattaforme normalizzano il volume e perché schiacciare il master non lo fa suonare più forte."
+    rischio: "basso"
+    fonti:
+      - "https://support.spotify.com/us/artists/article/loudness-normalization/"
+      - "https://www.itu.int/rec/R-REC-BS.1770"
+      - "https://tech.ebu.ch/publications/r128"
+      - "https://www.apple.com/apple-music/apple-digital-masters/"
+    strumento_collegato: "analizzatore-brano"
+    priorita: 1
+
+  - id: 5
+    slug: "agibilita-inps-per-i-concerti"
+    titolo: "Agibilità INPS per i concerti: cos'è, chi la richiede e quando"
+    categoria: "soldi-e-burocrazia"
+    sommario: "Cos'è il certificato di agibilità per i lavoratori dello spettacolo, chi ha l'obbligo di richiederlo (organizzatore, locale o musicista), entro quando va fatto e cosa succede se manca."
+    rischio: "alto"
+    fonti:
+      - "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50163.richiesta-di-agibilit-per-lavoratori-dello-spettacolo.html"
+      - "https://servizi2.inps.it/servizi/gss/default.aspx?lastmenu=58668"
+      - "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.50724.fondo-pensioni-per-lavoratori-dello-spettacolo-e-sportivi-professionisti.html"
+    strumento_collegato: null
+    priorita: 1
+
+  - id: 6
+    slug: "proporre-un-brano-alle-playlist-editoriali-spotify"
+    titolo: "Come proporre un brano alle playlist editoriali di Spotify"
+    categoria: "promozione"
+    sommario: "Come funziona il pitch da Spotify for Artists, con quanto anticipo farlo, cosa scrivere nel modulo e cosa aspettarsi: nessuna garanzia di inserimento, ma il brano entra nel Release Radar dei follower."
+    rischio: "basso"
+    fonti:
+      - "https://support.spotify.com/us/artists/article/pitching-music-and-videos-to-playlist-editors/"
+      - "https://artists.spotify.com/blog/behind-the-playlists-your-questions-answered-by-our-playlist-editors"
+    strumento_collegato: "generatori-prompt"
+    priorita: 1
+
+  - id: 7
+    slug: "diritto-d-autore-e-diritti-connessi"
+    titolo: "Diritto d'autore e diritti connessi: la differenza spiegata semplice"
+    categoria: "diritti-e-siae"
+    sommario: "Chi guadagna cosa da un brano: autori ed editori con il diritto d'autore, interpreti e produttori della registrazione con i diritti connessi. Quali enti raccolgono gli uni e gli altri in Italia."
+    rischio: "alto"
+    fonti:
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1941-04-22;633"
+      - "https://www.siae.it/it/autori-ed-editori/diritto-autore/"
+      - "https://www.nuovoimaie.it/mission/diritti-musica/"
+    strumento_collegato: null
+    priorita: 1
+
+  - id: 8
+    slug: "stage-plot-e-channel-list"
+    titolo: "Stage plot e channel list: come preparare la scheda tecnica della band"
+    categoria: "live-e-concerti"
+    sommario: "Cosa mettere in pianta del palco, lista ingressi, monitor, corrente e backline perché il fonico del locale sappia cosa aspettarsi. Quando e come inviarla prima della data."
+    rischio: "basso"
+    fonti:
+      - "https://www.soundonsound.com/techniques/effective-soundchecking"
+      - "https://www.soundonsound.com/glossary/rider"
+      - "https://www.soundonsound.com/sound-advice/power-electrical-safety-stage"
+    strumento_collegato: "stage-plot"
+    priorita: 1
+
+  - id: 9
+    slug: "codice-isrc-cos-e-come-si-ottiene"
+    titolo: "Codice ISRC: cos'è, a cosa serve e come si ottiene"
+    categoria: "distribuzione-e-streaming"
+    sommario: "A cosa serve il codice che identifica ogni registrazione, quando lo assegna il distributore e quando conviene chiedere un proprio prefisso a FIMI, l'agenzia italiana. Gli errori da evitare con versioni, remix e remaster."
+    rischio: "basso"
+    fonti:
+      - "https://www.fimi.it/che-cose-il-codice-isrc/"
+      - "https://www.fimi.it/richiedi-codice-isrc/"
+      - "https://isrc.ifpi.org/"
+    strumento_collegato: null
+    priorita: 1
+
+  - id: 10
+    slug: "fatturare-una-data-domande-al-commercialista"
+    titolo: "Fatturare una data da musicista: le domande da fare al commercialista"
+    categoria: "soldi-e-burocrazia"
+    sommario: "Fattura con partita IVA, prestazione occasionale o compenso con agibilità: le strade possibili per farsi pagare un concerto. L'elenco di domande da portare al commercialista per scegliere la propria."
+    rischio: "alto"
+    fonti:
+      - "https://www.agenziaentrate.gov.it/portale/schede/comunicazioni/fatture-e-corrispettivi/infogen_fatture_corrispettivi"
+      - "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-"
+      - "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.50724.fondo-pensioni-per-lavoratori-dello-spettacolo-e-sportivi-professionisti.html"
+      - "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50163.richiesta-di-agibilit-per-lavoratori-dello-spettacolo.html"
+    strumento_collegato: "calcolatore-data"
+    priorita: 1
+
+  - id: 11
+    slug: "come-scrivere-a-un-locale-per-una-data"
+    titolo: "Come scrivere a un locale per proporre una data"
+    categoria: "live-e-concerti"
+    sommario: "Come trovare i locali adatti al proprio progetto, cosa scrivere nella prima email (link, ascolti, date, scheda tecnica), quando richiamare e quali errori fanno finire una proposta nel cestino."
+    rischio: "basso"
+    fonti:
+      - "https://keeponlive.com/chi-siamo/"
+      - "https://portale.keeponlive.com/cerca/circolo/"
+    strumento_collegato: "generatori-prompt"
+    priorita: 1
+
+  - id: 12
+    slug: "sei-settimane-prima-di-un-singolo"
+    titolo: "Le sei settimane prima dell'uscita di un singolo: cosa fare e quando"
+    categoria: "carriera-e-organizzazione"
+    sommario: "Il calendario settimana per settimana: consegna al distributore, pitch alle playlist, pre-save, materiali per social e stampa, cosa fare il giorno dell'uscita e nei giorni successivi."
+    rischio: "basso"
+    fonti:
+      - "https://artists.spotify.com/en/blog/release-guide-preparing-for-release-day"
+      - "https://support.spotify.com/us/artists/article/pitching-music-and-videos-to-playlist-editors/"
+      - "https://support.spotify.com/us/artists/article/getting-started-with-countdown-pages-on-spotify/"
+    strumento_collegato: "release-planner"
+    priorita: 1
+
+  - id: 13
+    slug: "nuovo-imaie-cosa-fa-come-iscriversi"
+    titolo: "Nuovo IMAIE: cosa fa e come iscriversi"
+    categoria: "diritti-e-siae"
+    sommario: "Quali compensi raccoglie il Nuovo IMAIE per gli artisti interpreti ed esecutori, chi può iscriversi e conferire il mandato, quali documenti servono e come dichiarare il proprio repertorio."
+    rischio: "alto"
+    fonti:
+      - "https://www.nuovoimaie.it/artisti/iscriviti-e-conferisci-mandato/"
+      - "https://www.nuovoimaie.it/mission/diritti-musica/"
+      - "https://www.nuovoimaie.it/faq/"
+    strumento_collegato: null
+    priorita: 1
+
+  - id: 14
+    slug: "come-preparare-un-press-kit-epk"
+    titolo: "Come preparare un press kit (EPK) per locali, festival e stampa"
+    categoria: "promozione"
+    sommario: "Cosa deve contenere un press kit essenziale (bio breve e lunga, foto, link, numeri, contatti, scheda tecnica), in che formato inviarlo e come tenerlo aggiornato."
+    rischio: "basso"
+    fonti:
+      - "https://support.spotify.com/us/artists/article/artist-image-guidelines/"
+      - "https://musicconnect.apple.com/support/5573-apple-music-guidelines-publicity-photos"
+      - "https://artists.spotify.com/blog/making-the-most-of-your-artist-profile-on-spotify"
+    strumento_collegato: "generatori-prompt"
+    priorita: 1
+
+  - id: 15
+    slug: "file-audio-da-mandare-al-distributore"
+    titolo: "Che file mandare al distributore: formato, sample rate e bit depth"
+    categoria: "produzione-e-audio"
+    sommario: "Quale formato consegnare (WAV o FLAC alla risoluzione nativa), perché non serve convertire in MP3 e come controllare il file prima del caricamento."
+    rischio: "basso"
+    fonti:
+      - "https://support.spotify.com/us/artists/article/audio-file-formats/"
+      - "https://www.apple.com/apple-music/apple-digital-masters/"
+      - "https://help.apple.com/itc/videoaudioassetguide/en.lproj/static.html"
+    strumento_collegato: "analizzatore-brano"
+    priorita: 1
+
+  - id: 16
+    slug: "split-sheet-dividere-i-diritti-di-un-brano"
+    titolo: "Split sheet: dividere i diritti di un brano scritto in più persone"
+    categoria: "diritti-e-siae"
+    sommario: "Cos'è uno split sheet, chi deve firmarlo e quando, come si stabiliscono le quote tra autori di testo e musica e come riportarle nel deposito SIAE dell'opera."
+    rischio: "alto"
+    fonti:
+      - "https://www.siae.it/it/autori-editori/iscritti/tutela-opere/musica/"
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1941-04-22;633"
+      - "https://www.siae.it/it/autori-ed-editori/diritto-autore/"
+    strumento_collegato: "modelli-documenti"
+    priorita: 1
+
+  # ───────────── Priorità 2: mesi 3-4 ─────────────
+  - id: 17
+    slug: "come-depositare-una-canzone"
+    titolo: "Come depositare una canzone: SIAE, opere inedite e prova della data"
+    categoria: "diritti-e-siae"
+    sommario: "Cosa significa davvero depositare un brano: il deposito delle opere per gli iscritti SIAE, il deposito delle opere inedite aperto a tutti e il Registro pubblico del Ministero della Cultura. Cosa prova ciascuno e cosa no."
+    rischio: "alto"
+    fonti:
+      - "https://www.siae.it/it/autori-editori/iscritti/tutela-opere/musica/"
+      - "https://www.siae.it/it/cosa-facciamo/altri-servizi/deposito-opere-inedite/"
+      - "https://biblioteche.cultura.gov.it/it/diritto-dautore/registro-pubblico-generale-delle-opere-protette/"
+    strumento_collegato: null
+    priorita: 2
+
+  - id: 18
+    slug: "bordero-siae-programma-musicale"
+    titolo: "Borderò SIAE: come compilare il programma musicale di un concerto"
+    categoria: "diritti-e-siae"
+    sommario: "Chi compila il borderò digitale, cosa fa il direttore d'esecuzione con mioBorderò e perché inserire bene i propri brani fa arrivare i diritti agli autori."
+    rischio: "alto"
+    fonti:
+      - "https://www.siae.it/it/utilizzatori/bordero/"
+      - "https://www.siae.it/it/notizie/guida-miobordero-siae/"
+    strumento_collegato: "scaletta"
+    priorita: 2
+
+  - id: 19
+    slug: "partita-iva-forfettaria-musicisti"
+    titolo: "Partita IVA forfettaria per musicisti: cosa chiedere al commercialista"
+    categoria: "soldi-e-burocrazia"
+    sommario: "Quando aprire la partita IVA, come funziona il regime forfettario (limiti di ricavi, imposta sostitutiva, esclusioni) e quale codice ATECO usare. Le domande da portare al commercialista prima di decidere."
+    rischio: "alto"
+    fonti:
+      - "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-"
+      - "https://www.agenziaentrate.gov.it/portale/schede/istanze/aa9_11-apertura-variazione-chiusura-pf/scheda-informativa-aa9_11"
+      - "https://www.istat.it/classificazione/ateco-2025/"
+    strumento_collegato: null
+    priorita: 2
+
+  - id: 20
+    slug: "copertina-del-singolo-requisiti"
+    titolo: "Copertina del singolo: misure e regole per Spotify e gli store"
+    categoria: "distribuzione-e-streaming"
+    sommario: "Dimensioni, formato, profilo colore e contenuti vietati (loghi, indirizzi web, prezzi, immagini fuorvianti) che fanno respingere una copertina, secondo i requisiti ufficiali di Spotify e Apple Music."
+    rischio: "basso"
+    fonti:
+      - "https://support.spotify.com/us/artists/article/cover-art-requirements/"
+      - "https://artists.apple.com/support/1120-cover-art"
+      - "https://help.apple.com/itc/musicstyleguide/en.lproj/static.html"
+    strumento_collegato: "controllo-copertina"
+    priorita: 2
+
+  - id: 21
+    slug: "calcolare-il-netto-di-una-data"
+    titolo: "Quanto costa suonare fuori città: calcolare il netto di una data"
+    categoria: "live-e-concerti"
+    sommario: "Come mettere in conto chilometri, carburante, pedaggi, pasti e noleggi per capire quanto resta davvero a ogni membro della band, e da quale cachet minimo partire per trattare."
+    rischio: "basso"
+    fonti:
+      - "https://aci.gov.it/servizio/costi-chilometrici-di-esercizio/"
+      - "https://www.mimit.gov.it/it/prezzi-carburanti-media-nazionale"
+      - "https://www.autostrade.it/it/servizi-al-cliente/pedaggio/come-si-calcola-il-pedaggio"
+    strumento_collegato: "calcolatore-data"
+    priorita: 2
+
+  - id: 22
+    slug: "spotify-for-artists-profilo-e-dati"
+    titolo: "Spotify for Artists: come accedere al profilo e leggere i dati"
+    categoria: "promozione"
+    sommario: "Come rivendicare il profilo artista, cosa si può modificare e come leggere ascoltatori, città e fonti degli ascolti per decidere dove suonare e cosa promuovere."
+    rischio: "basso"
+    fonti:
+      - "https://support.spotify.com/us/artists/article/getting-access-to-spotify-for-artists/"
+      - "https://support.spotify.com/us/artists/article/understanding-your-listener-and-follower-stats/"
+      - "https://support.spotify.com/us/artists/article/source-of-streams/"
+    strumento_collegato: null
+    priorita: 2
+
+  - id: 23
+    slug: "preparare-il-mix-per-il-mastering"
+    titolo: "Come preparare il mix per il mastering: headroom, file e note"
+    categoria: "produzione-e-audio"
+    sommario: "Cosa consegnare a chi fa il mastering: margine sui picchi, niente limiter sul bus master, formato e risoluzione, brani di riferimento e note. Come verificare il mix prima di inviarlo."
+    rischio: "basso"
+    fonti:
+      - "https://www.apple.com/apple-music/apple-digital-masters/"
+      - "https://artists.spotify.com/blog/what-to-know-about-mastering"
+      - "https://support.spotify.com/us/artists/article/track-not-as-loud-as-others/"
+    strumento_collegato: "analizzatore-brano"
+    priorita: 2
+
+  - id: 24
+    slug: "prestazione-occasionale-per-un-concerto"
+    titolo: "Prestazione occasionale per un concerto: cosa vale per i musicisti"
+    categoria: "soldi-e-burocrazia"
+    sommario: "Quando si può essere pagati con una ricevuta per prestazione occasionale e perché per chi fa spettacolo restano comunque i contributi ex ENPALS e l'agibilità. Cosa verificare per non sbagliare."
+    rischio: "alto"
+    fonti:
+      - "https://servizi2.inps.it/servizi/gss/default.aspx?lastmenu=58668"
+      - "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.50724.fondo-pensioni-per-lavoratori-dello-spettacolo-e-sportivi-professionisti.html"
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917"
+    strumento_collegato: "calcolatore-data"
+    priorita: 2
+
+  - id: 25
+    slug: "pubblicare-una-cover"
+    titolo: "Pubblicare una cover su Spotify e YouTube: cosa serve davvero"
+    categoria: "distribuzione-e-streaming"
+    sommario: "Differenza tra cover fedele ed elaborazione, quando serve il permesso degli aventi diritto e come vengono pagati gli autori originali sulle piattaforme. Cosa cambia se la cover esce anche su CD o vinile."
+    rischio: "alto"
+    fonti:
+      - "https://www.siae.it/it/utilizzatori/online/musica-streaming-download/"
+      - "https://www.siae.it/it/autori-editori/iscritti/tutela-opere/musica/"
+      - "https://www.siae.it/it/utilizzatori/chiedere-licenza/servizi/cd-dvd/audio/"
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1941-04-22;633"
+    strumento_collegato: null
+    priorita: 2
+
+  - id: 26
+    slug: "organizzare-un-concerto-permessi-siae"
+    titolo: "Organizzare un concerto in proprio: permesso SIAE e licenze"
+    categoria: "live-e-concerti"
+    sommario: "Cosa serve per organizzare una serata da soli o con un'associazione: licenza SIAE, borderò, autorizzazioni di pubblico spettacolo previste dal TULPS e agibilità per chi suona."
+    rischio: "alto"
+    fonti:
+      - "https://www.siae.it/it/utilizzatori/eventi-spettacolo-intrattenimento/concerti-festival-musicali-spettacoli-danza/"
+      - "https://www.siae.it/it/utilizzatori/eventi-spettacolo-intrattenimento/eventi-senza-ballo/"
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1931-06-18;773"
+    strumento_collegato: null
+    priorita: 2
+
+  - id: 27
+    slug: "pre-save-e-countdown-page"
+    titolo: "Pre-save e Countdown Page: preparare i fan prima dell'uscita"
+    categoria: "promozione"
+    sommario: "Cos'è un pre-save, come attivare la Countdown Page di Spotify o il pre-save del distributore, quando pubblicarli e come portarci i fan dai social e dalla newsletter."
+    rischio: "basso"
+    fonti:
+      - "https://support.spotify.com/us/artists/article/getting-started-with-countdown-pages-on-spotify/"
+      - "https://artists.spotify.com/countdown-pages"
+    strumento_collegato: "release-planner"
+    priorita: 2
+
+  - id: 28
+    slug: "bandi-e-contest-per-musicisti"
+    titolo: "Bandi e contest per musicisti: dove trovarli e come candidarsi"
+    categoria: "carriera-e-organizzazione"
+    sommario: "Le fonti principali di bandi per la musica (SIAE Per Chi Crea, Nuovo IMAIE, Ministero della Cultura, regioni, contest), come leggere un regolamento e cosa preparare prima che il bando apra."
+    rischio: "basso"
+    fonti:
+      - "https://www.perchicrea.it/"
+      - "https://www.nuovoimaie.it/mission/bandi-e-contributi/bandi-musica/"
+      - "https://spettacolo.cultura.gov.it/"
+    strumento_collegato: "bacheca-bandi"
+    priorita: 2
+
+  - id: 29
+    slug: "nome-della-band-registrare-il-marchio"
+    titolo: "Nome della band: come verificarlo e registrarlo come marchio"
+    categoria: "carriera-e-organizzazione"
+    sommario: "Come controllare se un nome è già usato, cosa protegge la registrazione di un marchio, differenza tra marchio italiano ed europeo e quali classi scegliere per musica e merchandising."
+    rischio: "alto"
+    fonti:
+      - "https://uibm.mise.gov.it/index.php/it/frequently-asked-questions-faq/214-faq/2036064-risposte-alle-domande-piu-frequenti-registrare-un-marchio-in-italia"
+      - "https://uibm.mise.gov.it/index.php/it/deposito-titoli/deposito-telematico"
+      - "https://europa.eu/youreurope/business/growing/protecting-intellectual-property/trade-marks/index_it.htm"
+    strumento_collegato: null
+    priorita: 2
+
+  - id: 30
+    slug: "youtube-content-id-per-musicisti"
+    titolo: "YouTube Content ID: come proteggere e monetizzare la tua musica"
+    categoria: "distribuzione-e-streaming"
+    sommario: "Come funziona il riconoscimento automatico dei brani su YouTube, perché un artista indipendente vi accede tramite distributore, quali brani non sono idonei e come gestire le rivendicazioni."
+    rischio: "alto"
+    fonti:
+      - "https://support.google.com/youtube/answer/2797370"
+      - "https://support.google.com/youtube/answer/1311402"
+      - "https://support.google.com/youtubemusic/answer/9105565"
+    strumento_collegato: null
+    priorita: 2
+
+  - id: 31
+    slug: "musica-creata-con-l-ai-legge-e-siae"
+    titolo: "Musica creata con l'AI: cosa dicono la legge italiana e la SIAE"
+    categoria: "produzione-e-audio"
+    sommario: "Quando un brano realizzato con strumenti di intelligenza artificiale è tutelato dal diritto d'autore secondo la legge 132/2025, cosa dice la SIAE sul deposito e quali obblighi di trasparenza arrivano dal regolamento europeo sull'AI."
+    rischio: "alto"
+    fonti:
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-09-23;132"
+      - "https://www.siae.it/it/notizie/ai-diritto-autore-guida/"
+      - "https://digital-strategy.ec.europa.eu/it/policies/regulatory-framework-ai"
+    strumento_collegato: null
+    priorita: 2
+
+  - id: 32
+    slug: "diritti-d-autore-e-royalties-in-dichiarazione"
+    titolo: "Diritti d'autore e royalties nella dichiarazione dei redditi"
+    categoria: "soldi-e-burocrazia"
+    sommario: "Come si tassano i proventi da diritto d'autore e le royalties dello streaming incassate tramite distributore, cos'è la deduzione forfettaria per gli autori e quali domande fare al commercialista."
+    rischio: "alto"
+    fonti:
+      - "https://www.agenziaentrate.gov.it/portale/schede/pagamenti/versamento-modello-f24-ritenute-su-reddito-di-lavoro-autonomo-f24_rit_red_lav_aut/importi-su-cui-si-applica-la-ritenuta-f24_rit_red_lav_aut"
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917"
+    strumento_collegato: null
+    priorita: 2
+
+  - id: 33
+    slug: "accordo-tra-i-membri-della-band"
+    titolo: "Accordo tra i membri della band: cosa mettere per iscritto"
+    categoria: "carriera-e-organizzazione"
+    sommario: "Le questioni da chiarire prima che diventino liti: uso del nome, divisione di compensi e spese, diritti su brani e registrazioni, strumentazione comune e cosa succede se qualcuno lascia il gruppo."
+    rischio: "alto"
+    fonti:
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262"
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1941-04-22;633"
+    strumento_collegato: "modelli-documenti"
+    priorita: 2
+
+  # ───────────── Priorità 3: dal quinto mese ─────────────
+  - id: 34
+    slug: "indennita-di-discontinuita-musicisti"
+    titolo: "Indennità di discontinuità: chi la può chiedere tra i musicisti"
+    categoria: "soldi-e-burocrazia"
+    sommario: "Cos'è l'indennità per i lavoratori dello spettacolo introdotta nel 2024, quali requisiti di giornate e reddito servono, come si presenta la domanda all'INPS ed entro quando."
+    rischio: "alto"
+    fonti:
+      - "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.indennit-di-discontinuit-a-favore-dei-lavoratori-dello-spettacolo.html"
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-11-30;175"
+    strumento_collegato: null
+    priorita: 3
+
+  - id: 35
+    slug: "metadati-di-un-uscita"
+    titolo: "Metadati di un'uscita: titoli, featuring e crediti senza errori"
+    categoria: "distribuzione-e-streaming"
+    sommario: "Come scrivere nome artista, titoli, versioni, featuring e crediti perché le piattaforme non respingano l'uscita e il brano finisca sul profilo giusto."
+    rischio: "basso"
+    fonti:
+      - "https://support.spotify.com/us/artists/article/metadata-formatting-guidelines/"
+      - "https://help.apple.com/itc/musicstyleguide/en.lproj/static.html"
+    strumento_collegato: null
+    priorita: 3
+
+  - id: 36
+    slug: "home-studio-attrezzatura-minima"
+    titolo: "Home studio: l'attrezzatura minima per registrare in casa"
+    categoria: "produzione-e-audio"
+    sommario: "Scheda audio, microfono, cuffie, monitor e trattamento della stanza: cosa serve davvero per iniziare a registrare in casa e dove conviene spendere per primo."
+    rischio: "basso"
+    fonti:
+      - "https://www.soundonsound.com/sound-advice/q-what-do-need-start-recording-my-own-music"
+      - "https://www.soundonsound.com/techniques/planning-your-first-home-studio-part-1"
+      - "https://www.soundonsound.com/techniques/studio-sos-making-small-room-sound-good"
+    strumento_collegato: null
+    priorita: 3
+
+  - id: 37
+    slug: "sample-e-loop-quando-serve-autorizzazione"
+    titolo: "Sample e loop in un brano: quando serve un'autorizzazione"
+    categoria: "produzione-e-audio"
+    sommario: "Differenza tra loop con licenza e campionamento di una registrazione esistente, quali diritti tocca un sample (autore della composizione e produttore della registrazione) e cosa verificare prima di pubblicare."
+    rischio: "alto"
+    fonti:
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1941-04-22;633"
+      - "https://www.siae.it/it/autori-ed-editori/diritto-autore/"
+      - "https://www.siae.it/it/autori-editori/iscritti/tutela-opere/musica/"
+    strumento_collegato: null
+    priorita: 3
+
+  - id: 38
+    slug: "canale-ufficiale-artista-youtube"
+    titolo: "Canale ufficiale dell'artista su YouTube: come ottenerlo"
+    categoria: "promozione"
+    sommario: "Cos'è il canale ufficiale dell'artista, quali requisiti servono, come si uniscono canale personale e canale generato automaticamente tramite il distributore e cosa cambia per statistiche e iscritti."
+    rischio: "basso"
+    fonti:
+      - "https://support.google.com/youtube/answer/7336634"
+      - "https://artists.youtube/"
+    strumento_collegato: null
+    priorita: 3
+
+  - id: 39
+    slug: "tiktok-per-musicisti-libreria-suoni"
+    titolo: "TikTok per musicisti: far entrare i tuoi brani nella libreria suoni"
+    categoria: "promozione"
+    sommario: "Come un brano arriva nella libreria suoni di TikTok (tramite distributore o SoundOn), come ottenere il profilo artista e come usare i dati per capire quali pezzi funzionano."
+    rischio: "basso"
+    fonti:
+      - "https://newsroom.tiktok.com/introducing-the-artist-account-to-boost-discoverability-on-tiktok-us?lang=en"
+      - "https://newsroom.tiktok.com/sound-on-the-new-platform-for-tiktok-music-marketing-and-global-track-distribution?lang=en"
+    strumento_collegato: null
+    priorita: 3
+
+  - id: 40
+    slug: "stream-comprati-e-ascolti-artificiali"
+    titolo: "Stream comprati e bot: perché rischi la rimozione dei brani"
+    categoria: "distribuzione-e-streaming"
+    sommario: "Come riconoscere i servizi che promettono ascolti o playlist a pagamento, cosa fanno Spotify e i distributori quando rilevano stream artificiali e come promuoversi senza rischi."
+    rischio: "basso"
+    fonti:
+      - "https://support.spotify.com/us/artists/article/third-party-services-that-guarantee-streams/"
+      - "https://artists.spotify.com/artificial-streaming"
+    strumento_collegato: null
+    priorita: 3
+
+  - id: 41
+    slug: "editore-musicale-cosa-fa"
+    titolo: "Editore musicale: cosa fa e quando ti serve davvero"
+    categoria: "diritti-e-siae"
+    sommario: "Cosa fa un editore per un autore (deposito, promozione del repertorio, sincronizzazioni, incassi esteri), come si iscrive alla SIAE e quando valutare un contratto di edizione o un'edizione propria."
+    rischio: "alto"
+    fonti:
+      - "https://www.siae.it/it/autori-ed-editori/iscriversi-a-siae/come-iscriversi-musica/editore/"
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1941-04-22;633"
+      - "https://www.siae.it/it/autori-ed-editori/diritto-autore/"
+    strumento_collegato: null
+    priorita: 3
+
+  - id: 42
+    slug: "siae-soundreef-altre-collecting"
+    titolo: "SIAE, Soundreef e altre collecting: chi può incassare i tuoi diritti"
+    categoria: "diritti-e-siae"
+    sommario: "Cosa è cambiato con la liberalizzazione del 2017, quali organismi sono autorizzati in Italia secondo l'elenco AGCOM e cosa confrontare prima di affidare la gestione dei propri diritti."
+    rischio: "alto"
+    fonti:
+      - "https://www.agcom.it/competenze/piattaforme-online/diritto-dautore-e-dei-diritti-connessi"
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2017-03-15;35"
+      - "https://www.siae.it/it/"
+      - "https://www.soundreef.com/it"
+    strumento_collegato: null
+    priorita: 3
+
+  - id: 43
+    slug: "contratto-per-un-concerto"
+    titolo: "Contratto per un concerto: cosa deve contenere"
+    categoria: "live-e-concerti"
+    sommario: "Gli elementi da mettere per iscritto con un locale o un organizzatore: compenso e modalità di pagamento, orari, ospitalità, scheda tecnica, agibilità e condizioni di annullamento."
+    rischio: "alto"
+    fonti:
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262"
+      - "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50163.richiesta-di-agibilit-per-lavoratori-dello-spettacolo.html"
+    strumento_collegato: "modelli-documenti"
+    priorita: 3
+
+  - id: 44
+    slug: "suonare-in-un-altro-paese-ue"
+    titolo: "Suonare in un altro Paese UE: certificato A1 e contributi"
+    categoria: "live-e-concerti"
+    sommario: "Cosa serve a un musicista che va a suonare in un altro Paese dell'Unione: il certificato A1, quale legislazione previdenziale si applica e quali documenti chiedere all'organizzatore."
+    rischio: "alto"
+    fonti:
+      - "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.certificato-di-distacco-del-lavoratore-in-paesi-ue.html"
+      - "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.rilascio-certificazione-a1-per-attivit-lavorative-in-stati-ue-see-svizzera.html"
+      - "https://europa.eu/youreurope/citizens/work/work-abroad/posted-workers/index_it.htm"
+    strumento_collegato: null
+    priorita: 3
+
+  - id: 45
+    slug: "contratto-discografico-clausole"
+    titolo: "Contratto discografico: le clausole da capire prima di firmare"
+    categoria: "carriera-e-organizzazione"
+    sommario: "Cosa cede un artista a un'etichetta (registrazioni, durata, territori), come si calcolano royalty e recuperi, quali diritti di trasparenza e di adeguamento del compenso riconosce la legge e cosa chiedere a un avvocato."
+    rischio: "alto"
+    fonti:
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1941-04-22;633"
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2021-11-08;177"
+      - "https://www.nuovoimaie.it/mission/diritti-musica/"
+    strumento_collegato: null
+    priorita: 3
+
+  - id: 46
+    slug: "pianificare-un-anno-di-uscite"
+    titolo: "Singoli, EP o album: come pianificare un anno di uscite"
+    categoria: "carriera-e-organizzazione"
+    sommario: "Ogni quanto pubblicare, come alternare singoli e progetti più lunghi, come incastrare uscite, concerti e scadenze dei bandi e come usare i dati delle uscite precedenti per decidere."
+    rischio: "basso"
+    fonti:
+      - "https://artists.spotify.com/new-releases"
+      - "https://artists.spotify.com/fan-study/new-releases"
+      - "https://artists.spotify.com/en/blog/release-guide-preparing-for-release-day"
+    strumento_collegato: "release-planner"
+    priorita: 3
+
+  - id: 47
+    slug: "foto-e-video-promozionali-liberatorie"
+    titolo: "Foto e video promozionali: diritti del fotografo e liberatorie"
+    categoria: "promozione"
+    sommario: "Chi detiene i diritti su foto e video della band, cosa deve concedere il fotografo per usarli su social, copertine e stampa, e quando serve la liberatoria delle persone riprese."
+    rischio: "alto"
+    fonti:
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1941-04-22;633"
+      - "https://www.garanteprivacy.it/"
+    strumento_collegato: "modelli-documenti"
+    priorita: 3
+
+  - id: 48
+    slug: "che-forma-dare-alla-band"
+    titolo: "Associazione, ditta o gruppo informale: che forma dare alla band"
+    categoria: "carriera-e-organizzazione"
+    sommario: "Quando una band può restare un gruppo informale e quando conviene un'associazione o un'impresa, cosa comporta ciascuna scelta per incassi, fatture e responsabilità, e cosa chiedere al commercialista."
+    rischio: "alto"
+    fonti:
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262"
+      - "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2017-07-03;117"
+      - "https://www.agenziaentrate.gov.it/portale/schede/istanze/aa7_10"
+    strumento_collegato: null
+    priorita: 3
+
+  - id: 49
+    slug: "modulo-w-8ben-distributore-americano"
+    titolo: "Modulo W-8BEN: cosa compilare se il distributore è americano"
+    categoria: "soldi-e-burocrazia"
+    sommario: "Perché distributori e piattaforme statunitensi chiedono il W-8BEN, cosa significa la ritenuta alla fonte negli Stati Uniti, come si applica la convenzione contro le doppie imposizioni e cosa verificare con il commercialista."
+    rischio: "alto"
+    fonti:
+      - "https://www.irs.gov/forms-pubs/about-form-w-8-ben"
+      - "https://www.agenziaentrate.gov.it/portale/schede/rimborsi/convenzioni-contro-le-doppie-imposizioni/modelli-e-istruzioni/stati-uniti-doppia-imposizione"
+      - "https://www.finanze.gov.it/it/Fiscalita-dellUnione-europea-e-internazionale/convenzioni-e-accordi/convenzioni-per-evitare-le-doppie-imposizioni/"
+    strumento_collegato: null
+    priorita: 3
+
+  - id: 50
+    slug: "vendere-merch-ai-concerti"
+    titolo: "Vendere magliette e dischi ai concerti: cosa dice il fisco"
+    categoria: "soldi-e-burocrazia"
+    sommario: "Cosa serve per vendere merchandising e CD al banchetto: partita IVA, corrispettivi telematici o fattura, e la licenza SIAE per stampare copie fisiche dei brani."
+    rischio: "alto"
+    fonti:
+      - "https://www.agenziaentrate.gov.it/portale/i-corrispettivi-elettronici"
+      - "https://www.agenziaentrate.gov.it/portale/schede/istanze/aa9_11-apertura-variazione-chiusura-pf/scheda-informativa-aa9_11"
+      - "https://www.siae.it/it/utilizzatori/chiedere-licenza/servizi/cd-dvd/audio/"
+    strumento_collegato: null
+    priorita: 3
