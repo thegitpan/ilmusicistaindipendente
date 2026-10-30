@@ -10,7 +10,7 @@ su Aruba (registrar): `mario.ns.cloudflare.com`, `vida.ns.cloudflare.com`.
 | 1 | Pulizia | Eliminare i 14 record importati da Aruba (A `@` 62.149.128.40, A `localhost`, 7 A `mx`, CNAME `admin`, `_domainconnect`, `ftp`, `www`, MX `@`) | Erano il parcheggio di Aruba: nessun servizio li usa |
 | 2 | Sito | Custom domain del Worker `il-musicista-indipendente` su `ilmusicistaindipendente.it` | Cloudflare crea il record da solo |
 | 3 | Sito | `www.ilmusicistaindipendente.it` → redirect 301 verso `https://ilmusicistaindipendente.it` | Un solo indirizzo canonico per la SEO |
-| 4 | Email in arrivo | Email Routing: MX e SPF di Cloudflare; regola `info@` → Gmail di Fabrizio | Cloudflare aggiunge MX/SPF da solo |
+| 4 | Email in arrivo | Email Routing: 3 MX `route1-3.mx.cloudflare.net`, TXT `@` SPF `v=spf1 include:_spf.mx.cloudflare.net ~all`, TXT `cf2024-1._domainkey` (DKIM di Cloudflare); regola `info@` → Gmail di Fabrizio | Record gestiti e bloccati da Email Routing |
 | 5 | Brevo | TXT `@` = `brevo-code:3f8970a2e6cff3e3b8f1aa44b17fed14` | Verifica proprietà |
 | 6 | Brevo | CNAME `brevo1._domainkey` → `b1.ilmusicistaindipendente-it.dkim.brevo.com` (solo DNS, non proxy) | DKIM |
 | 7 | Brevo | CNAME `brevo2._domainkey` → `b2.ilmusicistaindipendente-it.dkim.brevo.com` (solo DNS, non proxy) | DKIM |
@@ -29,3 +29,8 @@ con DKIM e non richiede SPF.
   "pending" in attesa del registro .it. **Punto 4 (inoltro `info@`) da fare**:
   la creazione della regola di inoltro è stata bloccata in attesa di un ok
   specifico. Dopo l'attivazione: "Autentica dominio" su Brevo.
+- 30/10/2026 (21:30): registro .it aggiornato, zona Cloudflare **attiva**. Sito
+  online su `https://ilmusicistaindipendente.it`, `www` in redirect 301. Fatto
+  il punto 4: Email Routing "Enabled", regola `info@` attiva. Dominio
+  **autenticato su Brevo** (tutti e 4 i record verificati). Configurazione
+  completa.
