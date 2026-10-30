@@ -1,0 +1,17 @@
+# Frontend
+node_modules/
+dist/
+.astro/
+.wrangler/
+
+# Segreti locali
+.env
+.env.*
+!.env.example
+
+# Il piano contiene strategia e dati personali: resta nella cartella Dropbox,
+# fuori dal repo pubblico.
+PIANO_PROGETTO.md
+
+# macOS
+.DS_Store

@@ -1,0 +1,160 @@
+/*
+ * Sistema visivo de Il Musicista Indipendente (vedi DESIGN.md).
+ * Riferimenti: locandine fotocopiate dei concerti, gaffer tape sul palco,
+ * channel list e scalette attaccate al monitor. Tutti i colori passano dai
+ * token qui sotto: nessun valore esadecimale nei componenti.
+ */
+
+:root {
+  --paper: #f3efe6;
+  --paper-2: #e9e3d6;
+  --ink: #151413;
+  --ink-soft: #4a4744;
+  --line: #cfc7b8;
+  --tape: #ff5b1f;
+  --tape-ink: #b83a0a;
+  --on-tape: #151413;
+
+  --font-display: "Big Shoulders Display", "Arial Narrow", sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+
+  --gutter: 16px;
+  --max: 1120px;
+  --radius: 4px;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #121110;
+    --paper-2: #1c1a18;
+    --ink: #ede8de;
+    --ink-soft: #a8a29a;
+    --line: #34302c;
+    --tape: #ff6a2e;
+    --tape-ink: #ff8a57;
+    --on-tape: #121110;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper: #121110;
+  --paper-2: #1c1a18;
+  --ink: #ede8de;
+  --ink-soft: #a8a29a;
+  --line: #34302c;
+  --tape: #ff6a2e;
+  --tape-ink: #ff8a57;
+  --on-tape: #121110;
+  color-scheme: dark;
+}
+
+@media (min-width: 720px) {
+  :root {
+    --gutter: 32px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--tape-ink);
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--tape);
+  outline-offset: 3px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  margin: 0;
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+}
+
+.wrap {
+  width: 100%;
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Etichetta di gaffer tape: la firma visiva del sito. */
+.tape {
+  background: var(--tape);
+  color: var(--on-tape);
+  padding: 0 0.12em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 8px 12px;
+  z-index: 10;
+}
+
+.skip-link:focus {
+  left: 8px;
+  top: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

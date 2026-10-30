@@ -1,0 +1,38 @@
+---
+import { SITE } from "../config/site";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="wrap row">
+    <p>
+      <strong>{SITE.name}</strong> · progetto indipendente di {SITE.ownerName}
+    </p>
+    <p>
+      Contatti: <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>
+    </p>
+    <p class="mono">© {year}</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 2px solid var(--ink);
+    margin-top: 96px;
+    padding-block: 28px 40px;
+    color: var(--ink-soft);
+    font-size: 0.9375rem;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 32px;
+    justify-content: space-between;
+  }
+
+  strong {
+    color: var(--ink);
+  }
+</style>

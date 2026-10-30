@@ -1,0 +1,12 @@
+{
+  // Configurazione deploy Cloudflare (Workers static assets):
+  // il sito statico in dist/ viene servito come asset, senza codice server.
+  // Il nome del Worker non si tocca: rinominarlo crea un Worker nuovo e
+  // stacca il dominio collegato.
+  "name": "il-musicista-indipendente",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}

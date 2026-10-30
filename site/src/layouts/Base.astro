@@ -1,0 +1,60 @@
+---
+// Questo pacchetto esporta i pesi senza estensione (".css" verrebbe raddoppiato).
+import "@fontsource/big-shoulders-display/800";
+import "@fontsource/ibm-plex-sans/400.css";
+import "@fontsource/ibm-plex-sans/600.css";
+import "@fontsource/ibm-plex-mono/500.css";
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE } from "../config/site";
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** "article" per news e guide, "website" per tutto il resto. */
+  type?: "website" | "article";
+  /** Data di pubblicazione ISO, solo per type="article". */
+  publishedDate?: string;
+}
+
+const { title, description = SITE.description, type = "website", publishedDate } = Astro.props;
+const fullTitle = title ? `${title} — ${SITE.name}` : SITE.name;
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : undefined;
+---
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    {canonical && <link rel="canonical" href={canonical} />}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#f3efe6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)" />
+
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:locale" content={SITE.locale} />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    {canonical && <meta property="og:url" content={canonical} />}
+    {
+      type === "article" && publishedDate && (
+        <meta property="article:published_time" content={publishedDate} />
+      )
+    }
+    <meta name="twitter:card" content="summary" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Salta al contenuto</a>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

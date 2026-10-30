@@ -1,0 +1,33 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="Pagina non trovata">
+  <section class="wrap lost">
+    <p class="mono">Errore 404 · canale muto</p>
+    <h1>Qui non arriva segnale.</h1>
+    <p>La pagina che cerchi non esiste, o non l'abbiamo ancora montata.</p>
+    <a href="/">Torna alla home</a>
+  </section>
+</Base>
+
+<style>
+  .lost {
+    padding-block: 96px 48px;
+    display: grid;
+    gap: 20px;
+    justify-items: start;
+  }
+
+  .lost .mono {
+    color: var(--tape-ink);
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+  }
+
+  p {
+    color: var(--ink-soft);
+  }
+</style>
