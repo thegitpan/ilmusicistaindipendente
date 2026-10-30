@@ -24,3 +24,8 @@ con DKIM e non richiede SPF.
 - 30/10/2026: name server cambiati su Aruba; il registro .it mostra ancora i
   vecchi name server (propagazione in corso). Dominio aggiunto su Brevo con
   metodo manuale, record da applicare.
+- 30/10/2026 (sera): fatti i punti 1, 2, 3 (regola "Redirect from WWW to root"
+  e `www` collegato anche al Worker), 5, 6, 7, 8. Zona Cloudflare ancora
+  "pending" in attesa del registro .it. **Punto 4 (inoltro `info@`) da fare**:
+  la creazione della regola di inoltro è stata bloccata in attesa di un ok
+  specifico. Dopo l'attivazione: "Autentica dominio" su Brevo.
